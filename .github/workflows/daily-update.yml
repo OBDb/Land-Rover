@@ -13,8 +13,8 @@ permissions:
 
 # Make prefixes for this repo
 env:
-  FILTER_ARGS: --filter-prefix=Make1- --filter-prefix=Make2-
-  SIGNAL_PREFIX: LAND-ROVER
+  FILTER_ARGS: --filter-prefix=Land-Rover- --filter-prefix=Jaguar- --filter-prefix=Tata-
+  SIGNAL_PREFIX: LANDROVER
 
 concurrency:
   group: "data-update"
