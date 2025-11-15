@@ -23,6 +23,22 @@
   "signals": [
     {"id": "LANDROVER_TP_RL", "path": "Tires", "fmt": {"bix": 8, "len": 8, "max": 5, "mul": 0.01373, "unit": "bars" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "1172"}, "freq": 1,
+  "signals": [
+    {"id": "LANDROVER_BAT_V", "path": "Battery", "fmt": { "len": 8, "max": 15.9375, "mul": 625, "div": 10000, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "1670"}, "freq": 1,
+  "signals": [
+    {"id": "LANDROVER_FUEL_RAIL_P", "path": "Fuel", "fmt": { "len": 16, "max": 511992.1875, "mul": 78125, "div": 10000, "unit": "kilopascal" }, "name": "Fuel rail pressure"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "168E"}, "freq": 1,
+  "signals": [
+    {"id": "LANDROVER_FUEL_RAIL_T", "path": "Fuel", "fmt": { "len": 8, "max": 60.96, "min": -61.44, "mul": 48, "div": 100, "sign": true, "unit": "celsius" }, "name": "Fuel rail temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "16C1"}, "freq": 1,
+  "signals": [
+    {"id": "LANDROVER_FLI", "path": "Fuel", "fmt": { "len": 16, "max": 100, "mul": 200, "div": 65535, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
+  ]},
 { "hdr": "7E4", "dbg": true, "cmd": {"22": "4903"}, "freq": 5,
   "signals": [
     {"id": "LANDROVER_HVB_CELL_V_MAX", "path": "Battery", "fmt": { "len": 16, "max": 32767, "unit": "millivolts" }, "name": "Maximum Cell Voltage"}
